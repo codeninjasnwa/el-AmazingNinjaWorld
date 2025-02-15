@@ -22,9 +22,12 @@ public class LifeHUD : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void HealPlayer()
     {
         
+        if (lives <3) {
+            lives += 1;
+        hearts[lives].SetActive(true);
+        }
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PickUpKey : MonoBehaviour
 {
+
     SpriteRenderer m_renderer;
     public ParticleSystem m_particle;
 
@@ -21,7 +22,7 @@ public class PickUpKey : MonoBehaviour
         m_renderer.enabled = false;
         m_particle.Stop();
         allParticles.Play();
-        //HealthBar.GetComponent<LifeHUD>().HealPlayer();
+        HealthBar.GetComponent<LifeHUD>().HealPlayer();
         //Debug.Log("Hit!");
     }
 
